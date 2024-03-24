@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:weather_app/services/weather_services.dart';
@@ -39,10 +41,19 @@ catch (e){
 
   // Init State
   void initState() {
-    super.initState
+    super.initState();
+
+    _fetchWeather();
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold();
+    Body: Column(
+      MainAxisAlignment: MainAxisAligment.center,
+      children: [
+        Text(_weather?.cityName ?? "loading city..."),
+        Text('${_weather?.temperature.round()}°C')
+      ],
+    );,
   }
 }
