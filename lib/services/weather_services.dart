@@ -5,10 +5,11 @@ import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http
 
 import 'package:http/retry.dart';
-import 'package:weather_app/models/weather_models.dart';
+import 'package:weather_app/models/weather_models.dart' show Weather;
 
 class WeatherService {
 
+  // ignore: constant_identifier_names
   static const BASE_URL = 'http://api.openweathermap.org/data/2.5/weather';
   final String apiKey;
 
