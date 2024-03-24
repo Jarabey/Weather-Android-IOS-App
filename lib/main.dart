@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 
+import 'pages/weather_page.dart';
+
 void main() {
   runApp(const MyWidget()); // Wrap your app
 }
